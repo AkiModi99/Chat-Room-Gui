@@ -1,8 +1,8 @@
 import socket
 import threading
 
-HOST = 'localhost'
-PORT = 9090
+HOST = '192.168.0.103'
+PORT = 1234
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind((HOST, PORT))

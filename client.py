@@ -4,15 +4,15 @@ import tkinter
 import tkinter.scrolledtext
 from tkinter import simpledialog
 
-HOST = 'localhost'
-PORT = 9090
+HOST = '192.168.0.103'
+PORT = 1234
 
 class Client:
 
 	def __init__(self, host, port):
 		
 		self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-		self.sock.connect((HOST, PORT))
+		self.sock.connect((host, port))
 
 		msg = tkinter.Tk()
 		msg.withdraw()
